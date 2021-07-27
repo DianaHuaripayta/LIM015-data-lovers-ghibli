@@ -446,9 +446,9 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
   en `README.md`.
 * [ ] Incluye link a Zeplin en `README.md`.
-* [x] Incluye el listado de problemas que detectaste a través de tests de
+* [ ] Incluye el listado de problemas que detectaste a través de tests de
   usabilidad en el `README.md`.
-* [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [x] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [x] UI: Permite filtrar data en base a una condición.
-* [x] UI: Es _responsive_.
+* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
+* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
+* [ ] UI: Permite filtrar data en base a una condición.
+* [ ] UI: Es _responsive_.
