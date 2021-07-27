@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/99e095b5b2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"> Studio Ghibli</label>
+        <ul>
+          <li><a id="backNav" class="active" href="#">Films</a></li>
+          <li><a id="ranking" href="#">Ranking</a></li>
+          <li><a id="TopTenNav" href="#">Top 10</a></li>
+          <li><a href="#">Stadistica</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="informationHeader">
+        <section class="center">
+          <section class="sideLeft">
+            <!-- side left -->
+            <p class="titleHeader">INFORMATION</p>
+            <p class="descriptionSG">It was founded in June 1985 by Hayao Miyazaki and Isao Takahata, who would be the
+              first directors; and Toshio Suzuki, who would act as producer and president of the company.
+              Before its foundation, Hayao and Isao had a long career in animation, both for television and for film,
+              where series such as Heidi, Marcos or Lupine III: El castillo de Cagliostro; and Suzuki was editor of the
+              magazine Animage, signature of Tokuma Shoten. ​</p>
+            <div class="btn-seeMore">
+              <a href="https://ghiblicollection.com/" target="_blank" class="a-btnSM"><span> See more</span></a>
+            </div>
+          </section>
+
+          <!-- ------------------- -->
+          <section class="sideRight">
+            <section id="sliderContainer">
+              <ul>
+                <li><img src="img/headerPonyo.jpg" alt="" class="imgList"></li>
+                <li><img src="img/headerDragon.jpg" alt="" class="imgList"></li>
+                <li><img src="img/headerGhost.jpg" alt="" class="imgList"></li>
+                <li><img src="img/headerJungle2.jpg" alt="" class="imgList"></li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section class="containerSelect">
+        <!-- Section de los filtros de AÑOS - ORDEN - PRODUCTOR-->
+        <section class="section-filtros">
+          <!-- BUSCADOR -->
+
+          <div class="input-selector filter">
+
+            <span class="icon-search">
+              <label for="search">
+                <i class="fas fa-search"></i>
+              </label>
+            </span>
+
+            <input type="text" id="searchFilm" class="inputSearch" placeholder="Search...">
+
+          </div>
+          <!-- AÑOS -->
+          <div class="btn-filtro">
+            <!-- <label for="element-type-filter">Release date</label> -->
+            <select id="filter-years" class="select-filter">
+              <!-- elementFilterYears -->
+              <option value="all" disabled selected>Release date</option>
+              <option value="all">All</option>
+            </select>
+          </div>
+
+          <!-- ORDEN -->
+          <div class="btn-filtro">
+            <!--  <label for="element-type-filter"> A-Z </label> -->
+            <select id="filter-AZ" class="sortZA">
+              <option disabled selected>Sort by</option>
+              <option value="A-Z">Name A-Z</option>
+              <option value="Z-A">Name Z-A</option>
+            </select>
+          </div>
+          <!-- Sort by Producer -->
+          <div class="btn-filtro">
+            <!-- <label for="element-type-filter"> productor </label> -->
+            <select id="filter-producer" class="select-filter">
+              <option value="all" disabled selected>Producer</option>
+              <option value="all">All</option>
+            </select>
+          </div>
+        </section>
+      </section>
+
+      <section class="containerFilms">
+        <!-- all films -->
+        <section class="section-films">
+          <div id="count"></div>
+          <div class="cards" id="showAllFilms"></div> <!-- Show all movies -->
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Copyright &copy; 2021 - Diana Huaripayta</p>
+    </footer>
+  </div>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
